@@ -1,6 +1,6 @@
 app.get('/webhook', function(req, res) {
   if (req.query['hub.mode'] === 'subscribe' &&
-      req.query['hub.verify_token'] === <EAAaMClyth6EBAGCK2pGZA0LRSftZBWlkloBZCc24nwgiYrjvJI3usJttZC4tur1NsbZApbEOpuoo3wxnzkYWplZALZAK5jTpcKf40s7hgpSjqk3uWRpAJeZALI48fgwqetKLBezScMJX4acgaUria3SvUbbb7q57WUcKmKBhY67LJQZDZD>) {
+      req.query['hub.verify_token'] === EAAaMClyth6EBAGCK2pGZA0LRSftZBWlkloBZCc24nwgiYrjvJI3usJttZC4tur1NsbZApbEOpuoo3wxnzkYWplZALZAK5jTpcKf40s7hgpSjqk3uWRpAJeZALI48fgwqetKLBezScMJX4acgaUria3SvUbbb7q57WUcKmKBhY67LJQZDZD) {
     console.log("Validating webhook");
     res.status(200).send(req.query['hub.challenge']);
   } else {
